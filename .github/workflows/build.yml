@@ -1,3 +1,4 @@
+
 name: Build APK
 
 on:
@@ -9,17 +10,17 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Build APK
         uses: Digreatbrian/buildozer-action@v2
         with:
           work-dir: .
-          buildozer-cmd: |
-            yes | buildozer android debug
+          buildozer-cmd: buildozer android debug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: apk
+          name: flappybird-apk
           path: bin/*.apk
