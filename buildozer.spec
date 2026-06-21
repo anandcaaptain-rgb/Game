@@ -17,6 +17,10 @@ fullscreen = 0
 
 android.permissions = INTERNET
 
+# Modern Android settings
+android.api = 33
+android.minapi = 21
+
 [buildozer]
 
 log_level = 2
