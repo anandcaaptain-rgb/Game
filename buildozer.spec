@@ -2,21 +2,20 @@
 
 title = Flappy Bird
 package.name = flappybird
-package.domain = io.github.anandcaptain
+package.domain = org.anand
 
 source.dir = .
-source.include_exts = py
+source.include_exts = py,png,jpg,jpeg,kv,wav,mp3
 
-version = 1.0.0
+version = 1.0
 
 requirements = python3,kivy
 
 orientation = portrait
-fullscreen = 1
 
-android.api = 33
-android.minapi = 21
-android.archs = arm64-v8a, armeabi-v7a
+fullscreen = 0
+
+android.permissions = INTERNET
 
 [buildozer]
 
