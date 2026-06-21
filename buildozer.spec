@@ -20,6 +20,9 @@ android.ndk = 25b
 
 android.permissions = INTERNET
 
+# Uncomment if you add an icon
+# icon.filename = icon.png
+
 [buildozer]
 
 log_level = 2
